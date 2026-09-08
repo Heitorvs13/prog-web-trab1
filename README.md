@@ -15,7 +15,7 @@ O design e a escolha exata dos produtos são livres, mas a estrutura das página
 ## 3. Requisitos Técnicos
 
 ### HTML5 Semântico:
-A estrutura das páginas deve ser construída com elementos semânticos do HTML5, como <header>, <footer>, <nav>, <main>, <section>, <article>, <aside>, e <figure>
+A estrutura das páginas deve ser construída com elementos semânticos do HTML5, como \<header>, \<footer>, \<nav>, \<main>, \<section>, \<article>, \<aside>, e \<figure>
 O código HTML deve ser bem estruturado
 
 ### CSS3:
