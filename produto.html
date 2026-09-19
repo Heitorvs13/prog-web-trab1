@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página do Produto - Disco</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="categoria.html" aria-label="Voltar">
+            <figure>
+                <img src="src/icons/Voltar.svg" alt="Voltar" onerror="this.remove()">
+            </figure>
+        </a>
+
+        <div class="conta">
+            <div class="login">
+                <a href="#">Entrar</a>
+                <hr>
+                <a href="#">Cadastre-se</a>
+            </div>
+
+            <a href="#" aria-label="Carrinho">
+                <figure>
+                    <img src="src/icons/Carrinho.svg" alt="Carrinho">
+                </figure>
+            </a>
+        </div>
+    </header>
+
+    <main class="produto-container">
+        
+        <article class="produto-card">
+            
+            <div class="produto-imagem">
+                <img src="src/covers/Força Bruta - Jorge Ben Jor.jpg" alt="Imagem do Produto">
+            </div>
+
+            <div class="produto-detalhes">
+                <div class="produto-header">
+                    <h1>Força Bruta</h1>
+                    <h2>Jorge Ben Jor - 1970</h2>
+                </div>
+
+                <p class="produto-descricao">
+                    Álbum clássico da música brasileira com arranjos marcantes de samba-rock e MPB. Edição especial em vinil de alta fidelidade.
+                </p>
+
+                <section class="especificacoes-box">
+                    <h3>Especificações Técnicas:</h3>
+                    <ul>
+                        <li><strong>Formato:</strong> Vinil LP 12"</li>
+                        <li><strong>Gravadora:</strong> Philips</li>
+                        <li><strong>Ano de Lançamento:</strong> 1970</li>
+                    </ul>
+                </section>
+
+                <section class="formas-pagamento">
+                    <h3>Formas de Pagamento:</h3>
+                    <div class="pagamento-list">
+                        <label class="pagamento-option">
+                            <input type="radio" name="pagamento" value="pix" checked>
+                            <span class="custom-radio"></span>
+                            PIX
+                        </label>
+
+                        <label class="pagamento-option">
+                            <input type="radio" name="pagamento" value="credito">
+                            <span class="custom-radio"></span>
+                            Crédito
+                        </label>
+
+                        <label class="pagamento-option">
+                            <input type="radio" name="pagamento" value="debito">
+                            <span class="custom-radio"></span>
+                            Débito
+                        </label>
+                    </div>
+                </section>
+
+                /* frete */
+                <section class="frete-box">
+                    <input type="text" placeholder="Informe o CEP">
+                    <button type="button" class="btn-calcular">
+                        Calcular
+                        <img src="src/icons/Delivery.svg" alt="" onerror="this.remove()">
+                    </button>
+                </section>
+            
+                <section class="compra-box">
+                    <div class="preco-container">
+                        <span class="preco-destaque">R$ 175,00</span>
+                        <span class="preco-subtext">Até 6x de R$ 29,17</span>
+                    </div>
+
+                    <div class="btn-compra-wrapper">
+                        <button type="button" class="btn-comprar">Adicionar ao Carrinho</button>
+                        <span class="estoque-subtext">Restam 3 em estoque</span>
+                    </div>
+                </section>
+
+            </div>
+
+        </article>
+    </main>
+
+    /*rodape*/
+    <footer>
+        <h1>Desenvolvido por:</h1>
+        <div class="devs">
+            <a href="#" class="dev-card">
+                <img src="src/icons/github.svg" alt="GitHub" class="github-icon">
+                <h2>Eduarda Terhorst</h2>
+            </a>
+            <a href="#" class="dev-card">
+                <img src="src/icons/github.svg" alt="GitHub" class="github-icon">
+                <h2>Heitor Vieira</h2>
+            </a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

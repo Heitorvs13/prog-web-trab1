@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Fugaz+One&display=swap');
+
+:root {
+    --main-red: #D32E2E;
+    --main-red-hover: #b52323;
+    --background-sand: #F7E7CE;
+    --background-sand-dark: #EAD9BD;
+
+    --bold: 'Fugaz One', cursive, sans-serif;
+    --light: 'Alumni Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../src/general/Background.jpg");
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #2b2b2b;
+    
+    font-family: var(--light);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/*global*/
+
+header {
+    width: 100%;
+    height: 7vh;
+    min-height: 48px;
+    padding: 0 1.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--main-red);
+}
+
+header figure {
+    height: 1.8rem;
+    width: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header figure img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+header .conta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+header .conta .login {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+header .conta .login a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: var(--light);
+}
+
+header .conta .login hr {
+    height: 1rem;
+    border: none;
+    border-left: 1px solid white;
+}
+
+/*index*/
+.logo {
+    height: 30vh;
+    padding-top: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    padding: 0rem 6rem;
+    background-color: var(--background-sand);
+}
+
+.hero h1 {
+    font-family: var(--light);
+    font-size: 6rem;
+    color: var(--main-red);
+}
+
+.hero nav {
+    height: 50%;
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-disco {
+    position: relative;
+    height: 100%;
+    aspect-ratio: 1;
+    display: flex;
+}
+
+.hero-disco .hero-disco-capa {
+    position: relative;
+    z-index: 2;
+    box-shadow: 8px 4px 10px rgba(0, 0, 0, 0.35);
+}
+
+.hero-disco .hero-disco-disco {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transform: translateX(30%);
+}
+
+.categorias {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding: 10vh 0rem;
+}
+
+.categorias .categoria {
+    width: 37vw;
+    border-radius: 10px;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--background-sand);
+    text-decoration: none;
+}
+
+.categorias .categoria h1 {
+    font-family: var(--bold);
+    font-size: 4rem;
+    color: var(--main-red);
+}
+
+/*rodape*/
+footer {
+    padding: 0.6rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--main-red);
+    margin-top: auto;
+    width: 100%;
+}
+
+footer h1 {
+    color: white;
+    font-family: var(--light);
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+
+footer .devs {
+    display: flex;
+    gap: 1.5rem;
+}
+
+footer .devs .dev-card {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    color: white;
+    font-family: var(--light);
+}
+
+footer .devs .dev-card h2 {
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+footer img.github-icon {
+    width: 18px !important;
+    height: 18px !important;
+    object-fit: contain;
+}
+
+/*produto*/
+.produto-container {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 1rem 2rem 1rem;
+}
+
+.produto-card {
+    background-color: var(--background-sand);
+    width: 100%;
+    max-width: 850px;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    border-radius: 4px;
+}
+
+/* Coluna Esquerda */
+.produto-imagem img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+/* Coluna Direita */
+.produto-detalhes {
+    display: flex;
+    flex-direction: column;
+}
+
+.produto-header h1 {
+    font-family: var(--bold);
+    font-size: 2.5rem;
+    color: #000;
+    line-height: 1;
+}
+
+.produto-header h2 {
+    font-family: var(--light);
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 0.8rem;
+}
+
+/* Descrição e Especificações */
+.produto-descricao {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.2;
+    margin-bottom: 0.8rem;
+}
+
+.especificacoes-box {
+    margin-bottom: 0.8rem;
+}
+
+.especificacoes-box h3 {
+    font-size: 1.1rem;
+    color: var(--main-red);
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+}
+
+.especificacoes-box ul {
+    list-style: disc;
+    padding-left: 1.2rem;
+}
+
+.especificacoes-box li {
+    font-size: 1.05rem;
+    color: #222;
+}
+
+/* Formas de Pagamento*/
+.formas-pagamento {
+    background-color: var(--background-sand-dark);
+    padding: 0.8rem;
+    border-radius: 6px;
+    margin-bottom: 0.8rem;
+}
+
+.formas-pagamento h3 {
+    font-size: 1.1rem;
+    color: var(--main-red);
+    font-weight: 400;
+    margin-bottom: 0.4rem;
+}
+
+.pagamento-list {
+    display: flex;
+    gap: 1rem;
+}
+
+.pagamento-option {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 1rem;
+    color: #333;
+    cursor: pointer;
+}
+
+.pagamento-option input[type="radio"] {
+    display: none;
+}
+
+.custom-radio {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #D1C1A5;
+    display: inline-block;
+}
+
+.pagamento-option input[type="radio"]:checked + .custom-radio {
+    background-color: var(--main-red);
+}
+
+/* Frete */
+.frete-box {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.frete-box input {
+    flex: 1;
+    padding: 0.4rem 0.8rem;
+    border: none;
+    background-color: #E2D3B7;
+    font-family: var(--light);
+    font-size: 1.1rem;
+    outline: none;
+}
+
+.btn-calcular {
+    background-color: #B2A282;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    color: white;
+    font-family: var(--light);
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    cursor: pointer;
+}
+
+.btn-calcular img {
+    height: 16px;
+}
+
+/* Preço e Botão Adicionar ao Carrinho */
+.compra-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: auto;
+}
+
+.preco-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.preco-destaque {
+    font-family: var(--bold);
+    font-size: 2.2rem;
+    color: var(--main-red);
+    line-height: 1;
+}
+
+.preco-subtext {
+    font-size: 0.9rem;
+    color: #444;
+}
+
+.btn-compra-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-comprar {
+    background-color: var(--main-red);
+    color: white;
+    border: none;
+    font-family: var(--bold);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-comprar:hover {
+    background-color: var(--main-red-hover);
+}
+
+.estoque-subtext {
+    font-size: 0.8rem;
+    color: #333;
+    margin-top: 0.2rem;
+}
+
+/* Responsividade*/
+@media (min-width: 768px) {
+    .produto-card {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+}
