@@ -36,6 +36,61 @@
     <main class="produtos">
         <h1 class="produtos-categoria">MPB</h1>
 
+        <section class="filtros">
+            <form>
+                <fieldset class="filtros-artistas">
+                    <legend>Artistas</legend>
+
+                    <div>
+                        <input type="checkbox" id="Jorge Ben Jor" name="artista" value="Jorge Ben Jor">
+                        <label for="Jorge Ben Jor">Jorge Ben Jor</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="Chico Buarque" name="artista" value="Chico Buarque">
+                        <label for="Chico Buarque">Chico Buarque</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="Belchior" name="artista" value="Belchior">
+                        <label for="Belchior">Belchior</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="Secos & Molhados" name="artista" value="Secos & Molhados">
+                        <label for="Secos & Molhados">Secos & Molhados</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="Arthur Verocai" name="artista" value="Arthur Verocai">
+                        <label for="Arthur Verocai">Arthur Verocai</label>
+                    </div>
+
+
+                    <a href="#">Ver todos</a>
+                </fieldset>
+
+                <fieldset class="filtros-preco">
+                    <legend>Preço:</legend>
+
+                    <div>
+                        <label for="min-price">De:</label>
+                        <input type="text" id="min-price" name="min-price" placeholder="De">
+                    </div>
+
+                    <div>
+                        <label for="max-price">Até:</label>
+                        <input type="text" id="max-price" name="max-price" placeholder="Até">
+                    </div>
+
+                    <button type="submit">
+                        <img src="src/icons/Avancar.svg" alt="Enviar">
+                    </button>
+
+                </fieldset>
+            </form>
+        </section>
+
         <section class="produtos-grid">
             <article class="produto">
                 <img src="src/covers/Força Bruta - Jorge Ben Jor.jpg" alt="Capa do Álbum">

@@ -245,15 +245,78 @@ footer img.github-icon {
     background-color: var(--background-sand);
     align-self: center;
     padding: calc(7dvh + 4rem) 4rem 4rem 4rem;
+    display: grid;
+    grid-template:
+        "cabecalho cabecalho"
+        "filtros produtos" 1fr/ 1fr 6fr;
 }
 
 .produtos .produtos-categoria {
     font-size: 4rem;
     color: var(--main-red);
     font-family: var(--bold);
+    grid-area: cabecalho;
+}
+
+.produtos .filtros {
+    grid-area: filtros;
+}
+
+.filtros fieldset {
+    margin-bottom: 2rem;
+    border: none;
+}
+
+.filtros fieldset legend{
+    font-size: 2rem;
+    color: var(--main-red);
+}
+
+.filtros-artistas{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+}
+
+.filtros-artistas input[type="checkbox"]:checked{
+    accent-color: var(--main-red);
+}
+
+.filtros a{
+    color: #000;
+}
+
+.filtros a:hover{
+    color: #444;
+}
+
+.filtros .filtros-preco{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.filtros-preco div{
+    display: flex;
+    flex-direction: column;
+}
+
+.filtros-preco input[type="text"]{
+    font-size: 0.8rem;
+    width: 8ch;
+    padding: 0.2rem;
+    background-color: var(--background-sand-dark);
+    border: none;
+}
+
+.filtros-preco button{
+    background-color: var(--main-red);
+    width: 2.5rem;
+    border: none;
 }
 
 .produtos-grid {
+    grid-area: produtos;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
